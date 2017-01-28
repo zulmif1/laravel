@@ -16,3 +16,6 @@ Route::get('/', function () {
 });
 
 Route::resource('tugas', 'TugasController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
