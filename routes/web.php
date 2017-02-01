@@ -12,10 +12,27 @@
 */
 
 Route::get('/', function () {
+	// return View('welcome');
     return redirect('tugas');
 });
 
 Route::resource('tugas', 'TugasController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
